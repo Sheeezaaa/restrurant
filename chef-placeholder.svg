@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="chefGrad" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#264438"/>
+      <stop offset="60%" stop-color="#172B23"/>
+      <stop offset="100%" stop-color="#0B1612"/>
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#chefGrad)"/>
+  
+  <g transform="translate(400, 480)">
+    <!-- Chef Silhouette / Monogram -->
+    <circle cx="0" cy="-60" r="100" fill="#1C352B" stroke="#C2A06E" stroke-width="2"/>
+    <text x="0" y="-45" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" fill="#C2A06E" text-anchor="middle">✦</text>
+    <text x="0" y="80" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="600" fill="#FAF7F2" text-anchor="middle" letter-spacing="3">EXECUTIVE CHEF</text>
+    <text x="0" y="115" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="500" fill="#C2A06E" text-anchor="middle" letter-spacing="4">KITCHEN MASTERY & CRAFT</text>
+  </g>
+</svg>

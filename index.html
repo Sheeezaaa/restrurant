@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AURA Fine Dining & Botanicals | Luxury Restaurant Template</title>
+  <meta name="description" content="A modern, editorial restaurant website template featuring seasonal gastronomy, interactive menu filtering, table reservations, food gallery lightbox, and live operating hours. Crafted by NovaPixelWorks.">
+  <meta name="keywords" content="restaurant template, fine dining, gastronomy, modern restaurant website, luxury dining, html template, NovaPixelWorks">
+  <meta name="theme-color" content="#172B23">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AURA Fine Dining & Botanicals">
+  <meta property="og:description" content="An evocative culinary journey blending contemporary European techniques with seasonal organic harvests.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Modern UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. NAVIGATION & HEADER
+       ======================================================================== -->
+  <header class="header" id="header" role="banner">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand" aria-label="AURA Restaurant Homepage">
+        <div class="brand-symbol" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">AURA</span>
+          <span class="brand-sub">Fine Dining & Botanicals</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#signature" class="nav-link">Signatures</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#hours" class="nav-link">Hours</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Nav CTAs -->
+      <div class="nav-actions">
+        <a href="#reservation" class="btn btn-sm btn-gold nav-cta-btn">Reserve a Table</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div class="mobile-backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="mobile-drawer-top-bar">
+        <div class="brand">
+          <div class="brand-symbol" aria-hidden="true">✦</div>
+          <div class="brand-text">
+            <span class="brand-title" style="color: var(--color-forest-dark);">AURA</span>
+            <span class="brand-sub">Restaurant & Bar</span>
+          </div>
+        </div>
+        <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close navigation menu">✕</button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="#hero" class="mobile-nav-link">Home <span>01</span></a>
+        <a href="#about" class="mobile-nav-link">Our Story <span>02</span></a>
+        <a href="#signature" class="mobile-nav-link">Signatures <span>03</span></a>
+        <a href="#menu" class="mobile-nav-link">Seasonal Menu <span>04</span></a>
+        <a href="#gallery" class="mobile-nav-link">Gallery <span>05</span></a>
+        <a href="#hours" class="mobile-nav-link">Opening Hours <span>06</span></a>
+        <a href="#testimonials" class="mobile-nav-link">Guest Reviews <span>07</span></a>
+        <a href="#contact" class="mobile-nav-link">Contact & Map <span>08</span></a>
+      </nav>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <div class="mobile-drawer-contact">
+        <strong>Reservations:</strong> +1 (555) 234-8900<br>
+        <strong>Location:</strong> 428 Kensington Boulevard, Culinary Arts Quarter
+      </div>
+      <a href="#reservation" class="btn btn-gold mobile-drawer-btn" style="width: 100%;">Book a Table</a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       2. HERO SECTION
+       ======================================================================== -->
+  <section class="hero" id="hero">
+    <div class="hero-background">
+      <img 
+        src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80" 
+        alt="Artisan culinary dish presented with edible gold leaf and microgreens" 
+        class="hero-bg-img"
+        loading="eager"
+        onerror="this.onerror=null; this.src='assets/hero-placeholder.svg';"
+      >
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-badge-wrap fade-in-up">
+        <span class="badge badge-gold">Michelin Guide Selected 2026</span>
+      </div>
+
+      <h1 class="hero-title fade-in-up delay-1">
+        Good Food.<br><em>Beautiful Moments.</em>
+      </h1>
+
+      <p class="hero-description fade-in-up delay-2">
+        An evocative culinary sanctuary harmonizing heritage European culinary artistry with rare wild botanicals, sustainable heirloom harvests, and exceptional vintage cellars.
+      </p>
+
+      <div class="hero-ctas fade-in-up delay-3">
+        <a href="#menu" class="btn btn-gold">Explore Our Menu</a>
+        <a href="#reservation" class="btn btn-outline-white">Reserve a Table</a>
+      </div>
+
+      <div class="hero-features fade-in-up delay-4">
+        <div class="hero-feature-item">
+          <span class="hero-feature-icon">✦</span>
+          <span>100% Farm-to-Table</span>
+        </div>
+        <div class="hero-feature-item">
+          <span class="hero-feature-icon">✦</span>
+          <span>Sommelier Wine Pairings</span>
+        </div>
+        <div class="hero-feature-item">
+          <span class="hero-feature-icon">✦</span>
+          <span>Private Dining Suites</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       3. ABOUT SECTION
+       ======================================================================== -->
+  <section class="section-padding bg-cream-surface" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visuals Column -->
+        <div class="about-visuals fade-in-up">
+          <div class="about-main-image-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80" 
+              alt="Master Chef Julian plating an exquisite botanical dish" 
+              class="about-main-img"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='assets/chef-placeholder.svg';"
+            >
+          </div>
+          <!-- Floating stats card -->
+          <div class="about-floating-card">
+            <div class="about-floating-badge">14+</div>
+            <div class="about-floating-text">
+              Years of Pure Gastronomic Dedication
+            </div>
+          </div>
+        </div>
+
+        <!-- Narrative Column -->
+        <div class="about-content fade-in-up delay-1">
+          <span class="eyebrow">Our Story & Heritage</span>
+          <h2 class="about-title">Where Culinary Craft Meets Botanical Poetry</h2>
+          
+          <p class="about-lead">
+            “We don't merely serve dinner. We choreograph memories across plates, celebrating earth's most pristine seasonal harvests.”
+          </p>
+
+          <p class="about-body">
+            Founded in 2012 by Executive Chef Julian Vance and Sommelier Claire Fontaine, AURA was born from a singular passion: elevating seasonal gastronomy through honest relationships with over 40 biodynamic growers, artisanal foragers, and coastal fishermen.
+          </p>
+
+          <p class="about-body">
+            Every creation is prepared in our open exhibition kitchen, utilizing ancestral flame techniques, botanical infusions, and low-temperature reduction methods to honor each ingredient's authentic soul.
+          </p>
+
+          <!-- Chef Quote Box -->
+          <div class="about-quote-box">
+            <div class="about-quote-text">
+              “True luxury in modern dining is not pretension—it is absolute freshness, intentional simplicity, and heartfelt hospitality.”
+            </div>
+            <div class="about-quote-author">Chef Julian Vance — Executive Chef & Founder</div>
+          </div>
+
+          <!-- Statistics Counters -->
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">14+</span>
+              <span class="stat-label">Years of Craft</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">48</span>
+              <span class="stat-label">Local Farm Partners</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">350+</span>
+              <span class="stat-label">Cellar Vintages</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">98%</span>
+              <span class="stat-label">Guest Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       4. SIGNATURE DISHES SECTION
+       ======================================================================== -->
+  <section class="section-padding bg-cream-card" id="signature">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="eyebrow">Curated Masterpieces</span>
+        <h2 class="section-title">Signature Creations</h2>
+        <p class="section-subtitle">
+          Our culinary team's defining plates, harmonizing complex reduction sauces, delicate textures, and unforgettable flavor profiles.
+        </p>
+      </div>
+
+      <div class="signature-grid">
+        <!-- Dish 1 -->
+        <article class="signature-card fade-in-up">
+          <div class="signature-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" 
+              alt="Prime Dry-Aged Filet Mignon with Truffle Butter" 
+              class="signature-img"
+              loading="lazy"
+            >
+            <span class="badge badge-gold signature-tag">Chef's Signature</span>
+            <span class="signature-price-badge">$68</span>
+          </div>
+          <div class="signature-body">
+            <h3 class="signature-dish-name">Truffle Black Angus Filet</h3>
+            <p class="signature-dish-desc">
+              45-day dry-aged tenderloin, Périgord black truffle emulsion, smoked potato mousseline, and heirloom glazed baby carrots.
+            </p>
+            <div class="signature-meta">
+              <span>Grain-Fed Prime Beef</span>
+              <span class="tag-dietary gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 2 -->
+        <article class="signature-card fade-in-up delay-1">
+          <div class="signature-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=800&q=80" 
+              alt="Crispy Skin Chilean Sea Bass with Citrus Dashi" 
+              class="signature-img"
+              loading="lazy"
+            >
+            <span class="badge badge-green signature-tag">Wild Catch</span>
+            <span class="signature-price-badge">$54</span>
+          </div>
+          <div class="signature-body">
+            <h3 class="signature-dish-name">Pan-Seared Chilean Sea Bass</h3>
+            <p class="signature-dish-desc">
+              Sustainable deep-sea bass, citrus dashi broth, braised baby bok choy, pickled maitake mushrooms, and ginger oil.
+            </p>
+            <div class="signature-meta">
+              <span>Sustainable Fishery</span>
+              <span class="tag-dietary popular">Popular</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 3 -->
+        <article class="signature-card fade-in-up delay-2">
+          <div class="signature-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80" 
+              alt="Saffron Carnaroli Risotto with Maine Lobster" 
+              class="signature-img"
+              loading="lazy"
+            >
+            <span class="badge badge-gold signature-tag">Tasting Favorite</span>
+            <span class="signature-price-badge">$48</span>
+          </div>
+          <div class="signature-body">
+            <h3 class="signature-dish-name">Saffron & Maine Lobster Risotto</h3>
+            <p class="signature-dish-desc">
+              Acquerello aged Carnaroli rice, Iranian royal saffron, butter-poached Maine lobster claw, mascarpone, and chive oil.
+            </p>
+            <div class="signature-meta">
+              <span>Imported Saffron</span>
+              <span class="tag-dietary chef">Chef's Pick</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 4 -->
+        <article class="signature-card fade-in-up delay-3">
+          <div class="signature-img-wrap">
+            <img 
+              src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80" 
+              alt="Valrhona Dark Chocolate Warm Soufflé" 
+              class="signature-img"
+              loading="lazy"
+            >
+            <span class="badge badge-gold signature-tag">Dessert Icon</span>
+            <span class="signature-price-badge">$22</span>
+          </div>
+          <div class="signature-body">
+            <h3 class="signature-dish-name">Valrhona Grand Cru Soufflé</h3>
+            <p class="signature-dish-desc">
+              70% Guanaja chocolate molten center, house-churned Madagascar bourbon vanilla gelato, and salted caramel drizzle.
+            </p>
+            <div class="signature-meta">
+              <span>Artisan Pastry</span>
+              <span class="tag-dietary veg">Vegetarian</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="menu-footer-cta fade-in-up">
+        <a href="#menu" class="btn btn-primary">Browse Full Seasonal Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       5. RESTAURANT MENU SECTION (Interactive Filtering)
+       ======================================================================== -->
+  <section class="section-padding bg-cream-surface" id="menu">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="eyebrow">Gastronomic Selection</span>
+        <h2 class="section-title">Our Seasonal Menu</h2>
+        <p class="section-subtitle">
+          Every recipe is prepared fresh daily using artisanal ingredients. Choose a category below to explore our seasonal offerings.
+        </p>
+      </div>
+
+      <!-- Menu Category Filters -->
+      <div class="menu-controls fade-in-up" role="tablist" aria-label="Menu Category Filter">
+        <button class="menu-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+          All Courses <span class="filter-count">16</span>
+        </button>
+        <button class="menu-filter-btn" data-filter="starters" role="tab" aria-selected="false">
+          Starters <span class="filter-count">4</span>
+        </button>
+        <button class="menu-filter-btn" data-filter="mains" role="tab" aria-selected="false">
+          Main Courses <span class="filter-count">4</span>
+        </button>
+        <button class="menu-filter-btn" data-filter="desserts" role="tab" aria-selected="false">
+          Desserts <span class="filter-count">4</span>
+        </button>
+        <button class="menu-filter-btn" data-filter="drinks" role="tab" aria-selected="false">
+          Cocktails & Wine <span class="filter-count">4</span>
+        </button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+        
+        <!-- STARTERS (4 items) -->
+        <article class="menu-item-card" data-category="starters">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1592417817098-8f3d69109853?auto=format&fit=crop&w=400&q=80" alt="Burrata di Puglia" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Burrata Di Puglia</h3>
+              <span class="menu-item-price">$24</span>
+            </div>
+            <p class="menu-item-desc">Creamy heirloom tomato carpaccio, wild garden basil oil, aged Modena balsamic pearls, and grilled focaccia.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary veg">Vegetarian</span>
+              <span class="tag-dietary popular">Popular</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="starters">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1534482421-64566f976cfa?auto=format&fit=crop&w=400&q=80" alt="Hamachi Yellowtail Crudo" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Yellowtail Hamachi Crudo</h3>
+              <span class="menu-item-price">$28</span>
+            </div>
+            <p class="menu-item-desc">Thinly sliced Pacific hamachi, ruby blood orange reduction, charred jalapeño, micro cilantro, sea salt flakes.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary gf">Gluten-Free</span>
+              <span class="tag-dietary chef">Chef's Choice</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="starters">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=400&q=80" alt="Wild Morel Mushroom Velouté" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Forest Morel Velouté</h3>
+              <span class="menu-item-price">$22</span>
+            </div>
+            <p class="menu-item-desc">Foraged wild forest morels, toasted hazelnuts, black truffle cream, and brioche croutons.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary veg">Vegetarian</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="starters">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" alt="Wagyu A5 Beef Carpaccio" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Wagyu A5 Carpaccio</h3>
+              <span class="menu-item-price">$32</span>
+            </div>
+            <p class="menu-item-desc">Miyazaki Wagyu, shaved 24-month Parmigiano-Reggiano, wild arugula, caperberries, and white truffle oil.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- MAINS (4 items) -->
+        <article class="menu-item-card" data-category="mains">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" alt="Herb-Crusted Rack of Colorado Lamb" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Herb-Crusted Rack of Lamb</h3>
+              <span class="menu-item-price">$62</span>
+            </div>
+            <p class="menu-item-desc">Dijon herb persillade, roasted garlic pomme purée, braised baby artichokes, rosemary jus reduction.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary chef">Chef Special</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="mains">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=400&q=80" alt="Chilean Sea Bass" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Pan-Seared Chilean Sea Bass</h3>
+              <span class="menu-item-price">$54</span>
+            </div>
+            <p class="menu-item-desc">Citrus dashi infusion, pickled beech mushrooms, sautéed baby bok choy, crispy scallion threads.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary gf">Gluten-Free</span>
+              <span class="tag-dietary popular">Popular</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="mains">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=400&q=80" alt="Black Truffle Handmade Tagliolini" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Truffle Hand-Cut Tagliolini</h3>
+              <span class="menu-item-price">$46</span>
+            </div>
+            <p class="menu-item-desc">Fresh 30-yolk egg pasta, cultured Normandy butter emulsion, freshly shaved black winter truffles, aged pecorino.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary veg">Vegetarian</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="mains">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=400&q=80" alt="Prime Dry-Aged Ribeye" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Dry-Aged Bone-In Ribeye</h3>
+              <span class="menu-item-price">$74</span>
+            </div>
+            <p class="menu-item-desc">16oz prime bone-in cut, bone marrow butter, blistered vine tomatoes, charred shallots, bordelaise jus.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- DESSERTS (4 items) -->
+        <article class="menu-item-card" data-category="desserts">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80" alt="Pistachio & Raspberry Tart" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Bronte Pistachio & Raspberry Tart</h3>
+              <span class="menu-item-price">$18</span>
+            </div>
+            <p class="menu-item-desc">Crisp sablé shell, Sicilian pistachio diplomat cream, fresh wild raspberries, gold leaf crisp.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary veg">Vegetarian</span>
+              <span class="tag-dietary popular">Popular</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="desserts">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=400&q=80" alt="Tahitian Vanilla Crème Brûlée" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Tahitian Vanilla Crème Brûlée</h3>
+              <span class="menu-item-price">$16</span>
+            </div>
+            <p class="menu-item-desc">Velvety rich custard infused with double Tahitian vanilla beans, crisp caramelized demerara crust, citrus biscotti.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary gf">Gluten-Free</span>
+              <span class="tag-dietary veg">Vegetarian</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="desserts">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=400&q=80" alt="Valrhona Warm Chocolate Fondant" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Valrhona Molten Fondant</h3>
+              <span class="menu-item-price">$20</span>
+            </div>
+            <p class="menu-item-desc">Liquid dark chocolate core, smoked sea salt flakes, blood orange coulis, artisanal mascarpone gelato.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary veg">Vegetarian</span>
+              <span class="tag-dietary chef">Chef's Pick</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="desserts">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=400&q=80" alt="Artisanal Affiné Cheese Board" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Artisanal Affiné Cheese Board</h3>
+              <span class="menu-item-price">$26</span>
+            </div>
+            <p class="menu-item-desc">Selection of four cave-aged European cheeses, wild honeycomb, spiced fig jam, marcona almonds, rye crisps.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary veg">Vegetarian</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- DRINKS (4 items) -->
+        <article class="menu-item-card" data-category="drinks">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=400&q=80" alt="Smoked Rosemary Old Fashioned" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Smoked Rosemary Old Fashioned</h3>
+              <span class="menu-item-price">$21</span>
+            </div>
+            <p class="menu-item-desc">Small batch Kentucky bourbon, demerara cane, aromatic bitters, torched garden rosemary smoke cloche.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary chef">Signature</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="drinks">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=400&q=80" alt="Botanical Elderflower Spritz" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Botanical Elderflower Spritz</h3>
+              <span class="menu-item-price">$19</span>
+            </div>
+            <p class="menu-item-desc">St. Germain liqueur, hand-crafted cucumber cordial, prosecco superiore, fresh mint sprig, club soda.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary popular">Popular</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="drinks">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=400&q=80" alt="Château Sommelier Reserve Bordeaux Blend" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Grand Cru Bordeaux Reserve 2018</h3>
+              <span class="menu-item-price">$26 <small style="font-size:0.75rem; color:var(--color-charcoal-muted);">/ Glass</small></span>
+            </div>
+            <p class="menu-item-desc">Cabernet Sauvignon & Merlot blend. Notes of cassis, cedar box, graphite, and velvety rounded tannins.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary gf">Sommelier Pick</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card" data-category="drinks">
+          <div class="menu-item-thumb">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=400&q=80" alt="Cold Brew Coffee & Cardamom Tonic" class="menu-item-img" loading="lazy">
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name">Cardamom Cold Brew Mocktail</h3>
+              <span class="menu-item-price">$14</span>
+            </div>
+            <p class="menu-item-desc">Single-origin Ethiopian cold brew, house-spiced cardamom syrup, Mediterranean tonic, expressed orange peel.</p>
+            <div class="menu-item-footer">
+              <span class="tag-dietary veg">Zero-Proof</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       6. FOOD GALLERY & LIGHTBOX SECTION
+       ======================================================================== -->
+  <section class="section-padding bg-cream-card" id="gallery">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="eyebrow">Visual Journey</span>
+        <h2 class="section-title">Atmosphere & Artistry</h2>
+        <p class="section-subtitle">
+          Step into our dining room, private salons, and open exhibition kitchens. Click any photo to expand into the fullscreen viewer.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item span-2 fade-in-up" tabindex="0" role="button" aria-label="View Plated Filet Mignon in fullscreen"
+             data-title="Artisan Filet Mignon Plating"
+             data-large="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=85">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Plated Filet Mignon with Truffle Butter" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+            <h4 class="gallery-overlay-title">Artisan Filet Mignon Plating</h4>
+            <span class="gallery-overlay-desc">Main Dining Service</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item fade-in-up delay-1" tabindex="0" role="button" aria-label="View Dining Room Ambience in fullscreen"
+             data-title="Evening Dining Room Ambience"
+             data-large="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=85">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Warm candlelit dining tables and interior architecture" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <h4 class="gallery-overlay-title">Evening Ambience</h4>
+            <span class="gallery-overlay-desc">The Grand Salon</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item fade-in-up delay-2" tabindex="0" role="button" aria-label="View Sommelier Cellar in fullscreen"
+             data-title="Sommelier Curated Wine Cellar"
+             data-large="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1600&q=85">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Red wine poured into crystal stemware" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <h4 class="gallery-overlay-title">Curated Wine Cellar</h4>
+            <span class="gallery-overlay-desc">Rare Vintages</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item fade-in-up" tabindex="0" role="button" aria-label="View Craft Cocktail Bar in fullscreen"
+             data-title="Botanical Mixology & Craft Cocktails"
+             data-large="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1600&q=85">
+          <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80" alt="Artisan cocktail garnished with citrus peel" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <h4 class="gallery-overlay-title">Botanical Mixology</h4>
+            <span class="gallery-overlay-desc">Lounge & Bar</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item span-2 fade-in-up delay-1" tabindex="0" role="button" aria-label="View Chef at work in fullscreen"
+             data-title="Precision Kitchen Craftsmanship"
+             data-large="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1600&q=85">
+          <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80" alt="Chef preparing fine dining dish with tweezers" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <h4 class="gallery-overlay-title">Kitchen Craftsmanship</h4>
+            <span class="gallery-overlay-desc">Exhibition Line</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item fade-in-up delay-2" tabindex="0" role="button" aria-label="View Pastry Art in fullscreen"
+             data-title="Pastry & Confectionery Art"
+             data-large="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1600&q=85">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Exquisite French pastry tart with berries" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-overlay-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <h4 class="gallery-overlay-title">Pastry & Confectionery</h4>
+            <span class="gallery-overlay-desc">Sweet Finales</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image gallery viewer">
+    <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close image viewer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <button class="lightbox-nav-btn lightbox-next" id="lightboxNext" aria-label="Next image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+
+    <div class="lightbox-content-box">
+      <img src="" alt="" class="lightbox-image" id="lightboxImg">
+      <div class="lightbox-caption-bar">
+        <div class="lightbox-title" id="lightboxTitle"></div>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       7. OPENING HOURS & REAL-TIME STATUS
+       ======================================================================== -->
+  <section class="section-padding bg-cream-surface" id="hours">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="eyebrow">Visit & Schedule</span>
+        <h2 class="section-title">Opening Hours</h2>
+        <p class="section-subtitle">
+          Join us for lunch, evening dinner service, or late cocktail tastings. Our real-time service indicator updates automatically based on current local time.
+        </p>
+      </div>
+
+      <div class="hours-wrapper">
+        <!-- Weekly schedule table card -->
+        <div class="hours-schedule-card fade-in-up">
+          <div class="hours-card-header">
+            <h3 class="hours-card-title">Weekly Dining Schedule</h3>
+            <!-- Live dynamic status pill generated by JS -->
+            <div class="status-pill is-open" id="restaurantStatusPill">
+              <span class="status-dot"></span>
+              <span id="restaurantStatusText">Checking live status...</span>
+            </div>
+          </div>
+
+          <div class="schedule-list">
+            <div class="schedule-row" data-day="1">
+              <div class="schedule-day">Monday</div>
+              <div class="schedule-time">Closed (Private Dining by Request)</div>
+            </div>
+            <div class="schedule-row" data-day="2">
+              <div class="schedule-day">Tuesday</div>
+              <div class="schedule-time">5:00 PM – 11:00 PM</div>
+            </div>
+            <div class="schedule-row" data-day="3">
+              <div class="schedule-day">Wednesday</div>
+              <div class="schedule-time">5:00 PM – 11:00 PM</div>
+            </div>
+            <div class="schedule-row" data-day="4">
+              <div class="schedule-day">Thursday</div>
+              <div class="schedule-time">5:00 PM – 11:00 PM</div>
+            </div>
+            <div class="schedule-row" data-day="5">
+              <div class="schedule-day">Friday</div>
+              <div class="schedule-time">4:30 PM – 11:30 PM</div>
+            </div>
+            <div class="schedule-row" data-day="6">
+              <div class="schedule-day">Saturday</div>
+              <div class="schedule-time">12:00 PM – 11:30 PM (Lunch & Dinner)</div>
+            </div>
+            <div class="schedule-row" data-day="0">
+              <div class="schedule-day">Sunday</div>
+              <div class="schedule-time">12:00 PM – 10:00 PM (All-Day Dining)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info & Location Quick Details -->
+        <div class="hours-info-card fade-in-up delay-1">
+          <div class="info-box">
+            <h4 class="info-box-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Prime Location
+            </h4>
+            <p class="info-box-desc">
+              428 Kensington Boulevard, Culinary Arts Quarter<br>
+              London, W8 4PQ, United Kingdom
+            </p>
+            <a href="#contact" class="info-action-link">Get Directions & Valet Info →</a>
+          </div>
+
+          <div class="info-box">
+            <h4 class="info-box-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Concierge & Private Salons
+            </h4>
+            <p class="info-box-desc">
+              For parties exceeding 8 guests or bespoke wine pairings, contact our dining concierge directly.<br>
+              <strong>Direct Phone:</strong> <a href="tel:+15552348900" style="color:var(--color-gold-hover); font-weight:600;">+1 (555) 234-8900</a>
+            </p>
+            <a href="mailto:concierge@aurarestaurant.com" class="info-action-link">Email Concierge Desk →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       8. TABLE RESERVATION UI
+       ======================================================================== -->
+  <section class="section-padding reservation-section" id="reservation">
+    <div class="reservation-pattern"></div>
+    <div class="container reservation-container">
+      <div class="reservation-wrapper">
+        <!-- Left: Experience Details -->
+        <div class="reservation-intro fade-in-up">
+          <span class="eyebrow" style="color:var(--color-gold-light);">Table Booking</span>
+          <h2 class="reservation-intro-title">An Intimate Table Awaits Your Arrival</h2>
+          <p class="reservation-intro-desc">
+            To provide each guest with our undivided attention, we seat a limited number of guests each evening. Reservations open 30 days in advance.
+          </p>
+
+          <div class="reservation-perks">
+            <div class="reservation-perk-item">
+              <div class="reservation-perk-icon">✦</div>
+              <div class="reservation-perk-text">
+                <h4>Flexible Cancellation</h4>
+                <p>Complimentary cancellation or rescheduling up to 6 hours prior to your seating.</p>
+              </div>
+            </div>
+
+            <div class="reservation-perk-item">
+              <div class="reservation-perk-icon">✦</div>
+              <div class="reservation-perk-text">
+                <h4>Dietary Accommodations</h4>
+                <p>Our kitchen accommodates vegetarian, pescatarian, celiac, and halal requests with advance notice.</p>
+              </div>
+            </div>
+
+            <div class="reservation-perk-item">
+              <div class="reservation-perk-icon">✦</div>
+              <div class="reservation-perk-text">
+                <h4>Dedicated Sommelier</h4>
+                <p>Pairing flights curated personally to harmonize with your selected dining courses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Polished Reservation Form Card -->
+        <div class="reservation-form-card fade-in-up delay-1">
+          <!-- Prominent Demo Mode Notice Banner -->
+          <div class="reservation-demo-banner" role="region" aria-label="Interactive Demo Information">
+            <div class="demo-banner-pill">
+              <span class="demo-radar-dot"></span>
+              <span>Interactive Client Simulator</span>
+            </div>
+            <p class="demo-banner-text">
+              <strong>Notice for Diners & Buyers:</strong> This table reservation tool demonstrates real-time frontend field validation, date controls, and generates an instant booking itinerary. <em>No real booking is transmitted to a live restaurant database</em> until connected to a booking provider (OpenTable, Resy) or form endpoint.
+            </p>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;">
+            <span class="badge badge-gold form-header-badge" style="margin-bottom:0;">Online Reservation UI</span>
+            <span class="badge badge-outline" style="font-size: 0.65rem;">Zero Backend Required</span>
+          </div>
+          <h3 class="reservation-form-title">Reserve Your Table</h3>
+          <p class="reservation-form-sub">Complete the details below to test our client-side reservation experience.</p>
+
+          <form id="reservationForm" novalidate>
+            <div class="form-grid">
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="resName" class="form-label">Full Name <span class="req">*</span></label>
+                <input type="text" id="resName" class="form-control" placeholder="e.g. Eleanor Vance" required autocomplete="name">
+                <span class="form-error-msg">Please enter your name (min 2 characters).</span>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="resEmail" class="form-label">Email Address <span class="req">*</span></label>
+                <input type="email" id="resEmail" class="form-control" placeholder="eleanor.vance@guestmail.com" required autocomplete="email">
+                <span class="form-error-msg">Please provide a valid email address.</span>
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="resPhone" class="form-label">Phone Number <span class="req">*</span></label>
+                <input type="tel" id="resPhone" class="form-control" placeholder="+1 (555) 234-8900" required autocomplete="tel">
+                <span class="form-error-msg">Please enter a valid phone number.</span>
+              </div>
+
+              <!-- Party Size -->
+              <div class="form-group">
+                <label for="resGuests" class="form-label">Number of Guests <span class="req">*</span></label>
+                <select id="resGuests" class="form-control" required>
+                  <option value="1">1 Guest (Solo Dining)</option>
+                  <option value="2" selected>2 Guests (Romantic Table)</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests (Standard Dining)</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7">7 Guests</option>
+                  <option value="8">8 Guests (Large Party)</option>
+                  <option value="9+">Private Salon (8+ Guests)</option>
+                </select>
+                <span class="form-error-msg">Please select number of guests.</span>
+              </div>
+
+              <!-- Date -->
+              <div class="form-group">
+                <label for="resDate" class="form-label">Reservation Date <span class="req">*</span></label>
+                <input type="date" id="resDate" class="form-control" required>
+                <span class="form-error-msg">Please choose an upcoming date (past dates restricted).</span>
+              </div>
+
+              <!-- Time -->
+              <div class="form-group">
+                <label for="resTime" class="form-label">Preferred Time Slot <span class="req">*</span></label>
+                <select id="resTime" class="form-control" required>
+                  <option value="">Select a sitting...</option>
+                  <optgroup label="Lunch Sittings">
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="12:45 PM">12:45 PM</option>
+                    <option value="1:30 PM">1:30 PM</option>
+                  </optgroup>
+                  <optgroup label="Dinner Sittings">
+                    <option value="5:30 PM">5:30 PM (Early Dinner)</option>
+                    <option value="6:30 PM">6:30 PM</option>
+                    <option value="7:30 PM" selected>7:30 PM (Prime Service)</option>
+                    <option value="8:30 PM">8:30 PM</option>
+                    <option value="9:30 PM">9:30 PM (Late Tasting)</option>
+                  </optgroup>
+                </select>
+                <span class="form-error-msg">Please select an available time.</span>
+              </div>
+
+              <!-- Preferred Seating -->
+              <div class="form-group form-col-full">
+                <label for="resSeating" class="form-label">Preferred Seating Area</label>
+                <select id="resSeating" class="form-control">
+                  <option value="Main Dining Room">Main Dining Room (Vibrant & Candlelit)</option>
+                  <option value="Garden Terrace">Botanical Glasshouse & Garden Terrace</option>
+                  <option value="Chef's Exhibition Counter">Chef's Exhibition Counter (Live Plating)</option>
+                  <option value="Private Salon">Private Salon / VIP Booth</option>
+                </select>
+              </div>
+
+              <!-- Special Requests -->
+              <div class="form-group form-col-full">
+                <label for="resNotes" class="form-label">Dietary Preferences & Special Requests (Optional)</label>
+                <textarea id="resNotes" class="form-control" placeholder="e.g. Celebrating an anniversary, peanut allergy, quiet corner table preferred..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-gold" style="width: 100%;">
+              Simulate & Confirm Reservation (Instant Demo Receipt)
+            </button>
+
+            <p class="form-disclaimer">
+              * Demo Mode: Generates immediate digital itinerary receipt. No charges or real bookings occur without an active backend.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Receipt Modal -->
+  <div class="res-modal" id="reservationModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Reservation Confirmation Receipt">
+    <div class="res-modal-card">
+      <div class="res-modal-watermark">DEMO SIMULATION RECEIPT</div>
+      
+      <div class="res-success-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h3 class="res-modal-title">Table Confirmed!</h3>
+      <p class="res-modal-desc">Thank you for dining with AURA. Your digital itinerary summary is shown below:</p>
+
+      <!-- Summary receipt details populated via JS -->
+      <div class="res-summary-box" id="resSummaryContent"></div>
+
+      <!-- Action Buttons Grid -->
+      <div class="res-modal-actions-grid">
+        <button type="button" class="btn btn-sm btn-outline" id="copyRefBtn" data-ref="" title="Copy booking reference code">
+          📋 Copy Ref ID
+        </button>
+        <button type="button" class="btn btn-sm btn-outline" id="printReceiptBtn" title="Print or save as PDF">
+          📥 Print / Save Itinerary
+        </button>
+        <a href="#" class="btn btn-sm btn-gold" id="calendarLinkBtn" target="_blank" rel="noopener noreferrer" title="Add this reservation to Google Calendar">
+          🗓️ Add to Google Calendar
+        </a>
+        <a href="#" class="btn btn-sm btn-outline" id="whatsappDemoBtn" target="_blank" rel="noopener noreferrer" title="Send reservation via WhatsApp">
+          💬 WhatsApp Booking Demo
+        </a>
+      </div>
+
+      <!-- Commercial template disclaimer -->
+      <div class="res-demo-notice">
+        <strong>⚠️ Production Website Owner Notice:</strong> This reservation receipt was generated in frontend simulation mode. To receive real guest bookings, connect this form to <strong>OpenTable, Resy, SevenRooms, Formspree, or EmailJS</strong> (step-by-step setup in <code>README.md</code>).
+      </div>
+
+      <button type="button" class="btn btn-primary" id="resModalClose" style="width:100%; margin-top: 8px;">Done & Close</button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       9. CUSTOMER TESTIMONIALS
+       ======================================================================== -->
+  <section class="section-padding bg-cream-surface" id="testimonials">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="eyebrow">Guest Accolades</span>
+        <h2 class="section-title">Words from Our Patrons</h2>
+        <p class="section-subtitle">
+          From distinguished culinary critics to intimate anniversary celebrations, discover what diners say about their evenings at AURA.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <article class="testimonial-card fade-in-up">
+          <div class="quote-mark">“</div>
+          <div class="star-rating" aria-label="5 stars rating">★★★★★</div>
+          <p class="testimonial-quote">
+            “The balance of rare botanicals and classic reduction techniques is pure alchemy. The Chilean Sea Bass with citrus dashi is hands down one of the top ten dishes served in the capital this year.”
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Margot Chen" class="author-avatar" loading="lazy">
+            <div>
+              <div class="author-name">Margot Chen</div>
+              <div class="author-role">Culinary Columnist, Gastronome Monthly</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonial 2 -->
+        <article class="testimonial-card fade-in-up delay-1">
+          <div class="quote-mark">“</div>
+          <div class="star-rating" aria-label="5 stars rating">★★★★★</div>
+          <p class="testimonial-quote">
+            “We hosted our 10th anniversary in the Botanical Terrace. The wine pairing by their head sommelier was breathtaking. Flawless hospitality that leaves you feeling cherished from beginning to end.”
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus & Elena Thorne" class="author-avatar" loading="lazy">
+            <div>
+              <div class="author-name">Marcus Thorne</div>
+              <div class="author-role">Private Dining Patron</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Testimonial 3 -->
+        <article class="testimonial-card fade-in-up delay-2">
+          <div class="quote-mark">“</div>
+          <div class="star-rating" aria-label="5 stars rating">★★★★★</div>
+          <p class="testimonial-quote">
+            “Chef Julian’s Saffron Risotto with Maine lobster is textbook perfection. The ambience is refined without being stiff, the lighting is evocative, and the staff anticipates every unspoken wish.”
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Dr. Vivienne Sterling" class="author-avatar" loading="lazy">
+            <div>
+              <div class="author-name">Dr. Vivienne Sterling</div>
+              <div class="author-role">Architect & Food Critic</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       10. CONTACT & LOCATION SECTION
+       ======================================================================== -->
+  <section class="section-padding bg-cream-card" id="contact">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <span class="eyebrow">Connect With Us</span>
+        <h2 class="section-title">Location & Enquiries</h2>
+        <p class="section-subtitle">
+          Have an inquiry regarding private events, buyout requests, or press? We are at your service.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Column -->
+        <div class="contact-info-wrap fade-in-up">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Sanctuary Address</h4>
+              <p>428 Kensington Boulevard, Culinary Arts Quarter<br>London, W8 4PQ, United Kingdom</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Reservations & Concierge</h4>
+              <p>
+                Telephone: <a href="tel:+15552348900">+1 (555) 234-8900</a><br>
+                Email: <a href="mailto:concierge@aurarestaurant.com">concierge@aurarestaurant.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Valet & Dress Code</h4>
+              <p>
+                Complimentary curbside valet parking starting at 5:00 PM.<br>
+                <strong>Dress Code:</strong> Smart casual & elegant attire.
+              </p>
+            </div>
+          </div>
+
+          <!-- Interactive Styled Map Placeholder Card -->
+          <div class="map-placeholder-card">
+            <div class="map-bg-texture">
+              <div class="map-pin">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <h5 style="font-family:var(--font-serif); font-size:1.25rem; color:var(--color-forest-dark);">AURA Dining Sanctuary</h5>
+              <p style="font-size:var(--text-xs); color:var(--color-charcoal-muted); margin-bottom:12px;">Centrally situated within Kensington's Culinary District</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                Open in Google Maps ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Box -->
+        <div class="contact-form-box fade-in-up delay-1">
+          <h3 class="contact-form-title">Send a Direct Message</h3>
+          <p class="contact-form-desc">For event buyouts, sommelier inquiries, or feedback.</p>
+
+          <div id="contactToast" class="contact-status-toast" role="status"></div>
+
+          <form id="contactForm" novalidate>
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="contactName" class="form-label">Your Name <span class="req">*</span></label>
+              <input type="text" id="contactName" class="form-control" placeholder="Jane Doe" required>
+              <span class="form-error-msg">Please provide your name.</span>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="contactEmail" class="form-label">Email Address <span class="req">*</span></label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="jane.smith@culinaryreview.com" required>
+              <span class="form-error-msg">Please provide a valid email address.</span>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="contactSubject" class="form-label">Subject <span class="req">*</span></label>
+              <input type="text" id="contactSubject" class="form-control" placeholder="Private Event Inquiry" required>
+              <span class="form-error-msg">Please specify a subject.</span>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 24px;">
+              <label for="contactMessage" class="form-label">Message Details <span class="req">*</span></label>
+              <textarea id="contactMessage" class="form-control" rows="4" placeholder="Tell us about your date, estimated party size, or specific desires..." required></textarea>
+              <span class="form-error-msg">Please enter a message (min 10 characters).</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Send Concierge Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       11. FOOTER
+       ======================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <a href="#hero" class="brand">
+            <div class="brand-symbol" style="border-color:var(--color-gold); color:var(--color-gold);">✦</div>
+            <div class="brand-text">
+              <span class="brand-title">AURA</span>
+              <span class="brand-sub">Fine Dining & Botanicals</span>
+            </div>
+          </a>
+          <p class="footer-brand-desc">
+            An artisanal dining sanctuary harmonizing modern European techniques with seasonal organic harvests and rare botanical craft.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://tripadvisor.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="TripAdvisor">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">Our Heritage</a></li>
+            <li><a href="#signature" class="footer-link">Signature Dishes</a></li>
+            <li><a href="#menu" class="footer-link">Full Seasonal Menu</a></li>
+            <li><a href="#gallery" class="footer-link">Visual Gallery</a></li>
+            <li><a href="#reservation" class="footer-link">Book a Table</a></li>
+          </ul>
+        </div>
+
+        <!-- Dining Hours Recap -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Dining Hours</h4>
+          <ul class="footer-links" style="font-size:var(--text-xs);">
+            <li><strong style="color:#FFF;">Tue – Thu:</strong> 5:00 PM – 11:00 PM</li>
+            <li><strong style="color:#FFF;">Friday:</strong> 4:30 PM – 11:30 PM</li>
+            <li><strong style="color:#FFF;">Saturday:</strong> 12:00 PM – 11:30 PM</li>
+            <li><strong style="color:#FFF;">Sunday:</strong> 12:00 PM – 10:00 PM</li>
+            <li><strong style="color:var(--color-gold);">Monday:</strong> Private Bookings Only</li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Column -->
+        <div class="footer-col">
+          <h4 class="footer-heading">The Cellar Gazette</h4>
+          <p class="footer-newsletter-text">
+            Receive private allocations of seasonal menu updates and invitation-only wine release dinners.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email for restaurant newsletter">
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> AURA Restaurant & Botanicals. All rights reserved.
+        </div>
+        <div class="footer-credit">
+          Designed & Built for Gumroad by <strong>NovaPixelWorks</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Main JavaScript Controller -->
+  <script src="js/main.js"></script>
+</body>
+</html>
