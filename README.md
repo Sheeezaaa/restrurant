@@ -216,14 +216,6 @@ restaurant-website/
 
 ---
 
-## 📜 License & Usage Rights
-
-This digital product is licensed exclusively by **NovaPixelWorks**.
-- **Permitted**: Build websites for yourself or unlimited paying client projects.
-- **Prohibited**: You may not resell or redistribute this template as a standalone downloadable theme on Gumroad, ThemeForest, or other digital marketplaces.
-
-See [LICENSE.md](LICENSE.md) for full terms.
-
 ---
 
 ## 💬 Support & Author Credits
